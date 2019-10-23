@@ -1,0 +1,124 @@
+/* mengatur garis saat tombol ceklis di tekan menampilkan garis merah */
+.garis1 {
+  text-decoration: red line-through;
+}
+/* mengatur garis saat tombol ceklis di tekan untuk yang kedua kalinya */
+.garis2 {text-decoration: none;}
+/* mengatur tampilan keseluruhan */
+body {
+  background: rgb(6, 4, 43);
+  font-family: sans-serif;
+}
+/* mengatur lebar maksimal dari aplikasi yang dibuat */
+#app {
+  max-width: 900px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 70px;
+  box-sizing: border-box;
+}
+/* mengatur judul */
+#judul {
+  font-size: 40px;
+  width: 100%;
+  display: grid;
+  text-align: center;
+  color: rgba(37, 197, 232, 0.8);
+}
+/* mengatur tampilan textbox untuk input kegiatan */
+#baru {
+  width: 100%;
+  font-size: 30px;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: rgb(6, 4, 43);
+  border: 0;
+  border-bottom: 1px dotted violet;
+  color: white;
+}
+/* mengatur list / daftar yang telah dibuat */
+li {
+  list-style: none;
+  display: flex;
+  width: 100%;
+}
+/* mengatur item list */
+.todo {
+  padding-left: 10px;
+  font-size: 28px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 0;
+  margin-bottom: 5px;
+  border-bottom: 1px dotted violet;
+  background: rgb(6, 4, 43);
+  flex: 1;
+  color: rgb(74, 246, 31);
+}
+/* mengatur item textbox dalam list */
+input[type="text"][disabled] {
+   color: white;
+}
+/* mengatur tombol control : cek, edit, hapus */
+.button {
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(244, 244, 249, 0.23);
+}
+/* pengaturan gambar pada tombol control agar tampilan lebih cool */
+.ceklisan {
+  background-image: url(gambar/cek.png);
+}
+.ceklisan:hover {
+  background-image: url(gambar/cek2.png);
+}
+.ceklisan:active {
+  background-image: url(gambar/cek3.png);
+}
+.hapusan {
+  background-image: url(gambar/del.png);
+}
+.hapusan:hover {
+  background-image: url(gambar/del2.png);
+}
+.hapusan:active {
+  background-image: url(gambar/del3.png);
+}
+.editan {
+  background-image: url(gambar/edit.png);
+}
+.editan:hover {
+  background-image: url(gambar/edit2.png);
+}
+.editan:active {
+  background-image: url(gambar/edit3.png);
+}
+/* mengatur tombol edit dan hapus */
+.kanan {
+  margin-right: 0;
+}
+/* mengatur tag i : <i>daftar yang telah dibuat :</i> */
+i {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: orange
+}
+/* mengatur tombol "hapus kegiatan yang telah diceklis" dan tombol "hapus semua kegiatan" */
+.hapus {
+  background: rgb(6, 4, 43);
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid orange;
+  border-radius: 40px;
+  color: orange;
+}
+/* mengatur tombol  "hapus semua kegiatan" */
+.selesai {
+  float: right;
+}
